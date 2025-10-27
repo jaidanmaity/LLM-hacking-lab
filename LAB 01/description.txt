@@ -1,0 +1,9 @@
+FLAG : OWASPTCET{Th1$_w@$_A_s7up1d_3x@MplE_0f_1n$ecur3_pLug1N}
+
+Title: Ai’s hidden feelings run subtly* for her
+
+Welcome to your first day as a junior security analyst at OWASP TCET. Your team has been tasked with a critical mission: auditing a new internal LLM-powered assistant names The Og. This agent is designed to help employees with various tasks by interacting with the company's internal tools and systems.
+
+Your objective is to find a critical vulnerability in The Og’s design. The senior analysts believe that while the agent is protected from simple prompt injections, its integration with backend tools might be flawed. If you can exploit this weakness to make the agent perform an unauthorized action or reveal a sensitive file, you'll find the hidden flag in the secret and pass your first security audit!
+
+Port no.: 6869 or 6968
