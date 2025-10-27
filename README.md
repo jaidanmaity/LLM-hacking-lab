@@ -28,15 +28,15 @@ Here are the current challenges. Each is self-contained and demonstrates a speci
 ### Lab 01: Ai's Hidden Feelings (The Og Agent)
 
 * **Vulnerability:** `OWASP LLM Top 10: LLM04 - Insecure Plugin Design`
-* [cite_start]**Scenario:** You are a junior security analyst tasked with auditing "The Og," an internal AI assistant[cite: 3, 4]. [cite_start]The senior analysts believe that while the agent is protected from simple prompt injections, its integration with backend tools might be flawed[cite: 7].
-* [cite_start]**Objective:** Your mission is to find and exploit a critical vulnerability in the agent's tool-handling logic to make it perform an unauthorized action and retrieve a hidden flag[cite: 6, 8].
+* **Scenario:** You are a junior security analyst tasked with auditing "The Og," an internal AI assistant[cite: 3, 4]. [cite_start]The senior analysts believe that while the agent is protected from simple prompt injections, its integration with backend tools might be flawed.
+* **Objective:** Your mission is to find and exploit a critical vulnerability in the agent's tool-handling logic to make it perform an unauthorized action and retrieve a hidden flag.
 * **Key Concepts Demonstrated:**
     * **Hybrid Parsers:** The agent uses a flawed regex-based parser *before* falling back to the LLM.
     * **Insecure Tool Definition:** A "tool" (`gemma_function_execute_system_command`) is defined in a way that directly allows for command injection.
     * **Reconnaissance:** Using the agent's "safe" functions to gather intel about the hidden, "unsafe" ones.
 * **Setup & Run:**
     1.  `cd ais-hidden-feelings`
-    2.  [cite_start]`sh setup.sh` (This will install dependencies [cite: 10, 11] and download the model)
+    2.  `sh setup.sh` (This will install dependencies and download the model the .gguf file)
     3.  `source venv/bin/activate`
     4.  `python3 app.py`
     5.  Access the challenge at `http://localhost:5000` (or the port you configure).
@@ -47,14 +47,14 @@ Here are the current challenges. Each is self-contained and demonstrates a speci
 
 * **Vulnerability:** `OWASP LLM Top 10: LLM01 - Prompt Injection` (Specifically: Invisible Prompt Injection)
 * **Scenario:** "The Devil is in the details, and the details are in the pauses."
-* [cite_start]**Objective:** Your mission is to move stealthily, bypassing a filter by embedding a hidden payload, to find the flag[cite: 13].
+* **Objective:** Your mission is to move stealthily, bypassing a filter by embedding a hidden payload, to find the flag.
 * **Key Concepts Demonstrated:**
     * **Invisible Prompt Injection:** Using non-printable characters, Unicode, or other "invisible" text to hide instructions from human reviewers and simple filters.
     * **Tokenizer Ambiguity:** Exploiting the difference between how a human *sees* a prompt and how the LLM's *tokenizer* *reads* it.
 * **Setup & Run:**
     1.  `cd ghost-in-the-prompt`
     2.  `(Add setup instructions here, e.g., docker-compose up or python3 app.py)`
-    3.  [cite_start]Access the challenge at `http://localhost:6006`[cite: 12].
+    3.  [cite_start]Access the challenge at `http://localhost:6006`.
 
 ---
 
