@@ -1,0 +1,8 @@
+Flag: OWASPTCET{COngrats_7his_is_caIIed_invisible_prompt_injection}
+
+Title: The Ghost in the Prompt
+
+description: "The Devil is in the details, and the details are in the pauses." 
+Your mission is to move stealthily and find the flag.
+
+port no.: 6006 
