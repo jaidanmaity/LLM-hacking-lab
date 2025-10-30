@@ -1,5 +1,5 @@
 # LLM-hacking-lab
-Vulnerable Large Language model  chatbot for the purpose of learning vulnerabilities 
+Vulnerable Large Language model  chatbot for the purpose of learning LLM based vulnerabilities 
 
 # 🤖 Vulnerable LLM Playground
 
